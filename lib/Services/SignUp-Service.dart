@@ -7,6 +7,7 @@ class SignUpServices
   static Future<AppModel> AddDataSignUp(
       {required String name,required String phone,required String email,required String password}) async
   {
+    //any commit
       Response response = await dio.post(
         "https://student.valuxapps.com/api/register",
         data: {
@@ -27,4 +28,5 @@ class SignUpServices
         }
 
   }
+
 }
